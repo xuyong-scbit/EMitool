@@ -78,7 +78,7 @@ result3=ExecuteCC(clusterNum=k,d=W,maxK=10,clusterAlg="hc",distance="pearson",ti
 subtype_cc<-data.frame(result3[["group"]])           
 colnames(subtype_cc)[1]<-"WMI_result_cc"           
 rownames(subtype_cc) <- colnames(W)               
-### Survival analysis
+# Survival analysis
 data<-read.table("./WMI/tests/testthat/KIRC_survival_OS.txt",header = T) ##3
 data02<-data[,c("samples","OS.time","OS")]
 GBM_OS<-data.frame(data02,subtype_cc)

@@ -1,7 +1,8 @@
 # WMI
-#Install package by navigating to the parent folder of this one and running
-#R CMD INSTALL WMI
+# Install package by navigating to the parent folder of this one and running
+# R CMD INSTALL WMI
 
+'''
 ##Weighted multi-modality integration (WMI) for disease subtyping
 library(WMI)
 ## GeneExp is of size n x d_1, where n is the number of patients, d_1 is the number of genes, e.g.
@@ -11,6 +12,7 @@ load("WMI/data/GeneExp.rda")
 load("WMI/data/MethyExp.rda")
 load("WMI/data/miRNAExp.rda")
 GBM=list(GeneExp=GeneExp,MethyExp=MethyExp,miRNAExp=miRNAExp)
+'''
 
 ## 1. Constructing independent k-nearest neighbor (KNN) graphs
 KNN_list = lapply(GBM, function(data){

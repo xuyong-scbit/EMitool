@@ -42,7 +42,7 @@ write.xlsx(W,file="./WMI/tests/testthat/W.xlsx")                    # Final inte
 write.xlsx(omics_distribution,file="./WMI/tests/testthat/omics_distribution.xlsx",row.names=TRUE)  # Patients modality weights     
 
 
-#Min-max normalization    
+## Min-max normalization    
 rm(list=ls())    
 library(openxlsx)    
 setwd("./WMI/tests/testthat")             
@@ -62,7 +62,7 @@ write.xlsx(df_scale_end,file="W_nomalize.xlsx")
 
 
 
-#consensus clustering           
+## consensus clustering           
 rm(list=ls())      
 library(ggplot2)   
 library(survminer)   
@@ -79,7 +79,7 @@ result3=ExecuteCC(clusterNum=k,d=W,maxK=10,clusterAlg="hc",distance="pearson",ti
 subtype_cc<-data.frame(result3[["group"]])                
 colnames(subtype_cc)[1]<-"WMI_result_cc"               
 rownames(subtype_cc) <- colnames(W)                     
-# Survival analysis       
+#Survival analysis       
 data<-read.table("./WMI/tests/testthat/KIRC_survival_OS.txt",header = T) ##3     
 data02<-data[,c("samples","OS.time","OS")]    
 GBM_OS<-data.frame(data02,subtype_cc)    
@@ -92,7 +92,7 @@ save(GBM_OS,file="./WMI/tests/testthat/WMI_survival_subtype_cc.RData")
 
 
 
-###Survival_curve    
+## Survival_curve    
 rm(list = ls(all = TRUE))      
 library(ggplot2)     
 library(survminer)    

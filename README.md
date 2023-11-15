@@ -62,7 +62,7 @@ write.xlsx(df_scale_end,file="W_nomalize.xlsx")
 
 
 
-## consensus clustering           
+## Subtypes              
 rm(list=ls())      
 library(ggplot2)   
 library(survminer)   

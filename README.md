@@ -1,7 +1,7 @@
 ### WMI install
 #Download WMI package from github(https://api.github.com/repos/xuyong-scbit/WMI/tarball/HEAD)        
 #Install WMI package        
-install_local("./xuyong-scbit-WMI.tar.gz", type = "binary")               
+install_local("./WMI.tar.gz", type = "binary")               
 
 
 ## Weighted multi-modality integration (WMI) for disease subtyping

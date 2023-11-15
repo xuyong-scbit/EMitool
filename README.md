@@ -1,8 +1,7 @@
-## WMI
-#Install package by navigating to the parent folder of this one and running
-#R CMD INSTALL WMI
+### WMI
+#Install package by navigating to the parent folder of this one and running   
+#R CMD INSTALL WMI   
 
-'''
 ## Weighted multi-modality integration (WMI) for disease subtyping
 library(WMI)
 #GeneExp is of size n x d_1, where n is the number of patients, d_1 is the number of genes, e.g.
@@ -43,7 +42,7 @@ write.xlsx(omics_distribution,file="./WMI/tests/testthat/omics_distribution.xlsx
 
 
 
-##Min-max normalization
+#Min-max normalization
 rm(list=ls())
 library(openxlsx)
 setwd("./WMI/tests/testthat")     

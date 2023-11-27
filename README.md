@@ -1,6 +1,7 @@
 ### WMI install
 #Download WMI package from github(https://api.github.com/repos/xuyong-scbit/WMI/tarball/HEAD)        
-#Install WMI package        
+#Install WMI package
+library(remotes)   
 install_local("./WMI.tar.gz", type = "binary")               
 
 
